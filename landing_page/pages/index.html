@@ -21,6 +21,7 @@
 
 <body>
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-warning fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/landing_page/assets/icons/navbar__logo.svg" class="navbar__logo"></a>
@@ -37,15 +38,20 @@
                             <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                            <a class="nav-link" href="#galeria">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/landing_page/pages/contact__us.html">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- BANNER O JUMBOTRON -->
         <div class="banner" id="home">
             <div class="banner__text">
                 <h1 class="main__title">Woof Resort</h1>
@@ -65,12 +71,14 @@
             </div>
         </div>
     </header>
+
     <main>
         <section class="main__card" id="servicios">
             <div class="services__container">
                 <div>
                     <h1 class="card__title text-center">Servicios</h1>
-                    
+                    <p class="text-dark m-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, officiis? Nesciunt quae quidem omnis rerum exercitationem nihil totam nostrum velit, voluptatum itaque illo, animi eos id cupiditate architecto odit ex!
+                    </5></p>
                 </div>
                 <div class="bs__cards__container">
                     <div class="card my-4 mx-2 border-0" style="width: 18rem;">
@@ -97,6 +105,70 @@
                             <a href="#" class="btn btn-warning">Agendar</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__card bg__color__2" id="galeria">
+            <div class="mx-5 pt-5">
+                <h1 class="card__title text-light">Galeria</h1>
+                <p class="text-light text-center">Lorem ipsum dolor sit amet</4></p>
+            </div>
+            <div class="bs__carousel pt-5 mb-5">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner rounded-4">
+                        <div class="carousel-item active">
+                            <img src="/landing_page/assets/img/dog_transportation1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/landing_page/assets/img/dog_hotel.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/landing_page/assets/img/dog_transportation1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+        </section>
+        <section class="main__card" id="contacto">
+            <div class="contactus__content">
+                <div class="background__form">
+                    <h2 class="sub__title text-dark">!CONTAC US!</h2>
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Nombre">
+                            <label for="floatingInputGroup1">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Apellido">
+                            <label for="floatingInputGroup1">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-dark mt-3">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text text-dark">Un ejecutivo se pondra en contacto con usted a la brevedad
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="/landing_page/assets/img/contact__usDog.jpg" alt="" class="contact__img">
                 </div>
             </div>
         </section>
