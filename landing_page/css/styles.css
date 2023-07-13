@@ -195,10 +195,9 @@
 
 /* BS */
 
-.bs__carousel{
+.carousel{
     width: 500px;
 }
-
 
 /* RESPONSIVE */
 
@@ -272,12 +271,15 @@
     columns: 2;
     column-gap: 20px;
 }
+
+/* bs */
+.carousel{
+    width: 350px;
+}
+
 }
 /* Galeria */
 
-.bs__carousel{
-    width: 350px;
-}
 
 
 
