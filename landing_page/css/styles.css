@@ -74,9 +74,10 @@
 }
 
 .services__container{
-    display: inline-block;
-    margin: 10vh 20vh;
+    display: inline;
+    margin: auto;
     align-items: center;
+    justify-content: center;
 }
 
 .card__img{
@@ -263,7 +264,10 @@
 }
 
 .bs__cards__container{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info__container ul{
