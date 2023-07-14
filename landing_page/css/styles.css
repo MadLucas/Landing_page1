@@ -55,7 +55,8 @@
     background: #F7971E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 100px;
+    padding: 10%x;
+    max-width: 100%;
 }
 
 .s__card{
@@ -69,15 +70,16 @@
 
 .card__content{
     display: flex;
-    margin: 20vh 20vh;
+    margin: 200px;
     align-items: center;
 }
 
 .services__container{
-    display: inline;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 70px;
 }
 
 .card__img{
@@ -194,13 +196,47 @@
     margin: 20px 20px;
 }
 
-/* BS */
+/* Galeria */
+
+/* bs */
 
 .carousel{
     width: 500px;
+    margin: 100px 0px;
 }
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 1500px){
+
+    /* formulario de contacto */
+    
+    .contactus__content{
+        flex-wrap: wrap;
+        margin: 20vh 20vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact__img {
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        height: 250px;
+        width: auto;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    /* bs carousel */
+
+    .carousel{
+        width: 400px;
+    }
+    
+    
+    }
+    
 
 @media screen and (max-width: 1000px){
 
@@ -276,39 +312,68 @@
     column-gap: 20px;
 }
 
+/* galeria */
+
 /* bs */
 .carousel{
     width: 350px;
 }
 
 }
-/* Galeria */
 
 
 
+@media screen and (max-width: 460px) {
+    
+    .banner__img{
+        width: 200px;
+        height: auto;
+    }
 
+    
 
-@media screen and (max-width: 1500px){
+    .carousel{
+        width: 220px;
+    }
 
-/* formulario de contacto */
+    .contactus__content{
+        width: 220px;
+        margin: auto;
 
-.contactus__content{
-    flex-wrap: wrap;
-    margin: 20vh 20vh;
-    align-items: center;
-    justify-content: center;
+    }
+
+    .contact__img{
+        display: none;
+
 }
 
-.contact__img {
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    height: 250px;
-    width: auto;
-    min-width: 100%;
-    object-fit: cover;
+.card__img{
+    width: 280px;
 }
 
+.info__container ul{
+    display: inline-block;
+    columns: 1;
+
+    list-style-type: none;
+    cursor: pointer;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.f__container{
+    margin: auto;
+}
+
+.line{
+    width: 280px;
+}
+
+.social__media i{
+    font-size: 30px;
+}
 
 }
 
